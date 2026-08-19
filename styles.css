@@ -160,7 +160,7 @@ header {
   background-color: var(--primary);
 
   h1 {
-    margin: 0;
+    margin: 0 auto;
     font-size: var(--step-0);
   }
 }
