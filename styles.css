@@ -1,0 +1,430 @@
+/* Recursive variable font, hotlinked from dryan.com */
+/* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (" " ' ') & bullet (•) */
+@font-face {
+  font-family: "Recursive";
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url("https://dryan.com/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2")
+    format("woff2");
+  unicode-range:
+    U+0020-007F, U+00A9, U+2190-2193, U+2018, U+2019, U+201C, U+201D, U+2022;
+}
+
+/* unicode latin-1 letters, basic european diacritics */
+@font-face {
+  font-family: "Recursive";
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url("https://dryan.com/fonts/Recursive_VF_1.085--subset_range_latin_1.woff2")
+    format("woff2");
+  unicode-range: U+00C0-00FF;
+}
+
+/* unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙) */
+@font-face {
+  font-family: "Recursive";
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url("https://dryan.com/fonts/Recursive_VF_1.085--subset_range_latin_1_punc.woff2")
+    format("woff2");
+  unicode-range: U+00A0-00A8, U+00AA-00BF, U+2194-2199;
+}
+
+/* unicode latin A extended */
+@font-face {
+  font-family: "Recursive";
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url("https://dryan.com/fonts/Recursive_VF_1.085--subset_range_latin_ext.woff2")
+    format("woff2");
+  unicode-range: U+0100-017F;
+}
+
+/* unicodes for vietnamese */
+@font-face {
+  font-family: "Recursive";
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url("https://dryan.com/fonts/Recursive_VF_1.085--subset_range_vietnamese.woff2")
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0,
+    U+1EA0-1EF9, U+20AB;
+}
+
+/* remaining Unicodes */
+@font-face {
+  font-family: "Recursive";
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url("https://dryan.com/fonts/Recursive_VF_1.085--subset_range_remaining.woff2")
+    format("woff2");
+  unicode-range:
+    U+2007, U+2008, U+2009, U+200A, U+200B, U+D, U+2010, U+2012, U+2013, U+2014, U+2015,
+    U+201A, U+201E, U+2020, U+2021, U+2026, U+2030, U+2032, U+2033, U+2039, U+203A,
+    U+203E, U+2044, U+2052, U+2070, U+2074, U+2075, U+2076, U+2077, U+2078, U+2079,
+    U+207B, U+2080, U+2081, U+2082, U+2083, U+2084, U+2085, U+2086, U+2087, U+2088,
+    U+2089, U+20A1, U+20A6, U+20A8, U+20A9, U+20AA, U+20AC, U+20AD, U+20B1, U+20B2,
+    U+20B4, U+20B5, U+20B8, U+20B9, U+20BA, U+20BC, U+20BD, U+20BF, U+F8FF, U+2113,
+    U+2116, U+2122, U+2126, U+212E, U+E132, U+E133, U+2153, U+2154, U+215B, U+215C,
+    U+215D, U+215E, U+18F, U+192, U+19D, U+1C4, U+1C5, U+1C6, U+1C7, U+1C8, U+1C9,
+    U+1CA, U+1CB, U+1CC, U+1E6, U+1E7, U+1EA, U+1EB, U+1F1, U+1F2, U+1F3, U+1FA, U+1FB,
+    U+1FC, U+1FD, U+1FE, U+1FF, U+200, U+201, U+202, U+203, U+204, U+205, U+206, U+207,
+    U+208, U+209, U+20A, U+20B, U+20C, U+20D, U+20E, U+20F, U+210, U+211, U+212, U+213,
+    U+214, U+215, U+216, U+217, U+218, U+219, U+21A, U+21B, U+2215, U+2219, U+221E,
+    U+221A, U+22A, U+22B, U+22C, U+22D, U+222B, U+230, U+231, U+232, U+233, U+2236,
+    U+237, U+2248, U+259, U+2260, U+2261, U+2264, U+2265, U+272, U+2B9, U+2BA, U+2BB,
+    U+2BC, U+2BE, U+2BF, U+2C6, U+2C7, U+2C8, U+2C9, U+2CA, U+2CB, U+2D8, U+2D9, U+2DA,
+    U+2DB, U+2DC, U+2DD, U+300, U+301, U+FB02, U+FB03, U+302, U+303, U+304, U+FB01,
+    U+306, U+307, U+308, U+309, U+30A, U+30B, U+30C, U+30F, U+311, U+312, U+315, U+31B,
+    U+2202, U+323, U+324, U+325, U+326, U+327, U+328, U+329, U+2205, U+32E, U+2206,
+    U+331, U+335, U+220F, U+2211, U+2212, U+391, U+392, U+393, U+394, U+398, U+39B,
+    U+39C, U+39D, U+3A0, U+3A6, U+3B1, U+3B2, U+3B3, U+3B4, U+3B8, U+3BB, U+3BC, U+3BD,
+    U+3C0, U+3C6, U+25A0, U+25A1, U+25B2, U+25B3, U+25B6, U+25B7, U+25BC, U+25BD,
+    U+25C0, U+25C1, U+25C6, U+25C7, U+25CA, U+1E08, U+1E09, U+1E0C, U+1E0D, U+1E0E,
+    U+1E0F, U+2610, U+2611, U+1E14, U+1E15, U+1E16, U+1E17, U+1E1C, U+1E1D, U+1E20,
+    U+1E21, U+1E24, U+1E25, U+1E2A, U+1E2B, U+1E2E, U+1E2F, U+1E36, U+1E37, U+1E3A,
+    U+1E3B, U+E3F, U+1E42, U+1E43, U+1E44, U+1E45, U+1E46, U+1E47, U+1E48, U+1E49,
+    U+1E4C, U+1E4D, U+1E4E, U+1E4F, U+1E50, U+1E51, U+1E52, U+1E53, U+1E5A, U+1E5B,
+    U+1E5E, U+1E5F, U+1E60, U+2661, U+1E61, U+1E62, U+1E63, U+1E64, U+1E65, U+1E66,
+    U+1E67, U+1E68, U+1E69, U+2665, U+1E6C, U+1E6D, U+1E6E, U+1E6F, U+1E78, U+1E79,
+    U+1E7A, U+1E7B, U+1E80, U+1E81, U+1E82, U+1E83, U+1E84, U+1E85, U+1E8E, U+1E8F,
+    U+1E92, U+1E93, U+1E97, U+1E9E, U+2713, U+27E8, U+27E9;
+}
+
+:root {
+  --django-primary-green: #0c4b33;
+  --django-secondary-green: #187f58;
+  --django-accent: #93d7b7;
+  --django-accent-hover: #c9f0dd;
+  --django-surface-1: #0e1117;
+  --django-surface-2: #181d27;
+  --django-white: #c1cad2;
+
+  --surface-1: var(--django-surface-1);
+  --surface-2: var(--django-surface-2);
+  --text-1: var(--django-white);
+  --text-2: var(--django-white);
+  --primary: var(--django-primary-green);
+  --secondary: var(--django-secondary-green);
+  --accent: var(--django-accent);
+  --accent-hover: var(--django-accent-hover);
+  --link-color: var(--accent);
+  --link-color-hover: var(--accent-hover);
+
+  --recursive--weight--bold: 800;
+  --recursive--weight--normal: 400;
+  --recursive--weight: var(--recursive--weight--normal);
+  --recursive--mono: 0;
+  --recursive--linear: 0;
+  --recursive--casual: 1;
+  --recursive--cursive--default: 0.5;
+  --recursive--cursive: var(--recursive--cursive--default);
+
+  /* Fluid type scale (base 18px/1.2 @360px -> 20px/1.25 @1240px) */
+  /* https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+
+  color-scheme: dark;
+  background-color: var(--django-surface-1);
+  color: var(--django-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Recursive",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-variation-settings:
+    "MONO" var(--recursive--mono),
+    "CASL" var(--recursive--linear),
+    "wght" var(--recursive--weight),
+    "CRSV" var(--recursive--cursive);
+  display: grid;
+  row-gap: 1rem;
+  min-block-size: 100vh;
+  grid-template-rows: max-content 1fr max-content;
+
+  @supports (min-block-size: 100dvb) {
+    min-block-size: 100dvb;
+  }
+
+  :link {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:where(:hover, :focus-visible, :active) {
+      color: var(--link-color-hover);
+      text-decoration: underline;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --recursive--weight: var(--recursive--weight--bold);
+
+  font-variation-settings:
+    "MONO" var(--recursive--mono),
+    "CASL" 0,
+    "wght" var(--recursive--weight),
+    "CRSV" var(--recursive--cursive);
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+h2 {
+  font-size: var(--step-4);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+h4 {
+  font-size: var(--step-2);
+}
+
+h5 {
+  font-size: var(--step-1);
+}
+
+h6 {
+  font-size: var(--step-0);
+}
+
+em {
+  font-variation-settings:
+    "MONO" var(--recursive--mono),
+    "CASL" var(--recursive--linear),
+    "wght" var(--recursive--weight),
+    "slnt" -14,
+    "CRSV" var(--recursive--cursive);
+}
+
+strong {
+  --recursive--weight: var(--recursive--weight--bold);
+
+  font-variation-settings:
+    "MONO" var(--recursive--mono),
+    "CASL" var(--recursive--linear),
+    "wght" var(--recursive--weight),
+    "CRSV" var(--recursive--cursive);
+}
+
+header,
+footer {
+  padding: 1rem;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary);
+
+  h1 {
+    margin: 0;
+    font-size: var(--step-0);
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: var(--surface-1);
+
+  .byline,
+  p {
+    margin: 0;
+    text-wrap: balance;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  max-inline-size: 80ch;
+}
+
+main {
+  text-align: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+dryan-slideshow {
+  display: flow-root;
+  min-block-size: 100%;
+
+  &[role="list"] {
+    padding: 0;
+    margin: 0;
+    list-style-type: "";
+    display: grid;
+    grid-auto-columns: 100vi;
+    grid-auto-flow: column;
+
+    @media (orientation: portrait) {
+      grid-auto-columns: unset;
+      grid-auto-rows: minmax(max-content, 80vb);
+      grid-auto-flow: row;
+      row-gap: 1rem;
+    }
+
+    > li {
+      padding-inline: 1rem;
+      scroll-snap-align: start;
+      container-name: --slide;
+      container-type: inline-size;
+    }
+  }
+
+  article {
+    padding: 1rem;
+    display: grid;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    grid-auto-rows: max-content;
+    place-content: center;
+    min-block-size: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--surface-2);
+    box-shadow:
+      rgba(3, 4, 7, 0.12) 0px -1px 2px 0px,
+      rgba(3, 4, 7, 0.13) 0px 3px 2px -2px,
+      rgba(3, 4, 7, 0.13) 0px 7px 5px -2px,
+      rgba(3, 4, 7, 0.14) 0px 12px 10px -2px,
+      rgba(3, 4, 7, 0.15) 0px 22px 18px -2px,
+      rgba(3, 4, 7, 0.16) 0px 41px 33px -2px,
+      rgba(3, 4, 7, 0.17) 0px 100px 80px -2px;
+    border: 1pt solid #495057;
+
+    h2 {
+      font-size: var(--step-4);
+      margin: 0 auto;
+
+      &:only-child {
+        font-size: var(--step-5);
+        margin-block-end: 1em;
+      }
+    }
+
+    h3 {
+      font-size: var(--step-2);
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 0;
+      font-size: var(--step-2);
+    }
+
+    ul,
+    ol {
+      text-align: start;
+      font-size: var(--step-2);
+      display: grid;
+      row-gap: 1rem;
+    }
+
+    p,
+    ol,
+    ul {
+      max-inline-size: 60ch;
+      margin-inline: auto;
+    }
+
+    blockquote {
+      padding: 1rem;
+      padding-inline-start: calc(2rem + 1ch);
+      background-color: color-mix(in oklch, var(--surface-2) 90%, white);
+      border-radius: 0.5rem;
+      text-align: start;
+      display: grid;
+      row-gap: 1rem;
+      max-inline-size: 60ch;
+      margin-inline: auto;
+      position: relative;
+
+      &::before {
+        content: "“";
+        font-size: 3rem;
+        line-height: 1;
+        margin-inline-end: 0.5rem;
+        position: absolute;
+        inset-block-start: 0.5rem;
+        inset-inline-start: 0.5rem;
+        color: var(--accent);
+      }
+
+      p {
+        margin-inline: 0;
+      }
+
+      cite {
+        justify-self: end;
+        margin-block-start: auto;
+      }
+    }
+  }
+
+  article:has(> blockquote:nth-of-type(2)) {
+    @container --slide (width >= 32rem) {
+      grid-template-columns: 1fr 2fr;
+      column-gap: 2rem;
+
+      &[data-layout="vertical"] {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+      }
+
+      h2 {
+        grid-column: 1 / -1;
+      }
+
+      blockquote {
+        margin-block: 0;
+        min-block-size: 100%;
+        min-inline-size: 100%;
+      }
+    }
+  }
+}
