@@ -184,9 +184,16 @@ h3 {
 }
 
 main {
+  container-type: inline-size;
+  inline-size: 100%;
   text-align: center;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+
+  @media (orientation: landscape) {
+    max-inline-size: calc(100vh * 16 / 9);
+    margin-inline: auto;
+  }
 }
 
 dryan-slideshow {
@@ -198,7 +205,7 @@ dryan-slideshow {
     margin: 0;
     list-style-type: "";
     display: grid;
-    grid-auto-columns: 100vi;
+    grid-auto-columns: 100cqi;
     grid-auto-flow: column;
 
     @media (orientation: portrait) {
@@ -220,8 +227,6 @@ dryan-slideshow {
     padding: 1rem;
     display: grid;
     row-gap: 1rem;
-    align-items: center;
-    justify-content: center;
     grid-auto-rows: max-content;
     place-content: center;
     min-block-size: 100%;
@@ -236,6 +241,10 @@ dryan-slideshow {
       rgba(3, 4, 7, 0.16) 0px 41px 33px -2px,
       rgba(3, 4, 7, 0.17) 0px 100px 80px -2px;
     border: 1pt solid #495057;
+
+    &:has(> .slide-content):not(:has(.lede)) {
+      grid-template-rows: auto 1fr;
+    }
 
     h2 {
       font-size: var(--step-4);
@@ -255,6 +264,27 @@ dryan-slideshow {
     p {
       margin: 0;
       font-size: var(--step-2);
+    }
+
+    .lede {
+      font-variation-settings:
+        "MONO" var(--recursive--mono),
+        "CASL" var(--recursive--linear),
+        "wght" var(--recursive--weight),
+        "slnt" -14,
+        "CRSV" var(--recursive--cursive);
+      font-size: var(--step-2);
+      max-inline-size: 40ch;
+    }
+
+    .lede + p {
+      margin-block-start: 4rem;
+    }
+
+    .slide-content {
+      display: grid;
+      row-gap: 1rem;
+      place-content: center;
     }
 
     ul,
@@ -314,7 +344,7 @@ dryan-slideshow {
     }
   }
 
-  article:has(> :is(blockquote, figure):nth-of-type(2)) {
+  .slide-content:has(> :is(blockquote, figure):nth-of-type(2)) {
     @container --slide (width >= 32rem) {
       grid-template-columns: 1fr 2fr;
       column-gap: 2rem;
@@ -326,10 +356,6 @@ dryan-slideshow {
       &[data-layout="vertical"] {
         grid-template-columns: 1fr;
         row-gap: 2rem;
-      }
-
-      h2 {
-        grid-column: 1 / -1;
       }
 
       :is(blockquote, figure) {
