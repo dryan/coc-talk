@@ -1,8 +1,6 @@
 ---
-title: "Good Conduct: The Mechanics of Governing a Code of Conduct"
-date: 2026-08-19
-share_image: /images/TODO-add-share-image.png
-seo_description: "How Django's Code of Conduct Working Group actually governs the CoC. The approval chain, the process for changing the process, and the real GitHub history other communities can fork."
+title: "The Block and Tackle of Django's Code of Conduct Working Group"
+seo_description: "How Django's Code of Conduct Working Group governs changes and handles reports, with the real GitHub history, scripts, and spreadsheet templates other communities can copy."
 ---
 
 In early 2026, Django's Code of Conduct Working Group adopted [Contributor Covenant 3.0](https://www.contributor-covenant.org/version/3/0/code_of_conduct/) as Django's Code of Conduct. I talked about why at DjangoCon US 2026 ([slides here](https://django-coc-2026.dryan.com/)). That talk was mostly the story of how we managed the people side of the process. This post is the technical mechanics of how we managed the change and our work going forward.
