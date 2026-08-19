@@ -304,12 +304,24 @@ dryan-slideshow {
         margin-block-start: auto;
       }
     }
+
+    figure {
+      margin: 0;
+
+      figcaption {
+        color: var(--accent);
+      }
+    }
   }
 
-  article:has(> blockquote:nth-of-type(2)) {
+  article:has(> :is(blockquote, figure):nth-of-type(2)) {
     @container --slide (width >= 32rem) {
       grid-template-columns: 1fr 2fr;
       column-gap: 2rem;
+
+      &:has(figure) {
+        grid-template-columns: 1fr 1fr;
+      }
 
       &[data-layout="vertical"] {
         grid-template-columns: 1fr;
@@ -320,7 +332,7 @@ dryan-slideshow {
         grid-column: 1 / -1;
       }
 
-      blockquote {
+      :is(blockquote, figure) {
         margin-block: 0;
         min-block-size: 100%;
         min-inline-size: 100%;
