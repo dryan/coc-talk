@@ -10,6 +10,7 @@ class DryanSlideshow extends HTMLElement {
     this._scrollContainer.addEventListener("scrollend", this._onScrollEnd);
 
     this._goToInitialHash();
+    this._onScrollEnd();
   }
 
   disconnectedCallback() {
@@ -48,6 +49,8 @@ class DryanSlideshow extends HTMLElement {
     if (index < 0) {
       return;
     }
+
+    document.body.dataset.currentSlide = slides[index].id;
 
     const hash = `#${slides[index].id}`;
     if (hash !== location.hash) {
