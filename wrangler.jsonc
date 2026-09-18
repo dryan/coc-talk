@@ -8,6 +8,6 @@
     { "pattern": "django-coc-2026.dryan.com", "custom_domain": true }
   ],
   "assets": {
-    "directory": "./"
+    "directory": "./public"
   }
 }
