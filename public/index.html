@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="https://dryan.com/recursive.css" />
     <link rel="stylesheet" href="/styles.css" />
     <script src="/slideshow.js" defer></script>
+    <script
+      src="https://browser.sentry-cdn.com/10.75.0/bundle.min.js"
+      integrity="sha384-Yht61aP1Ubz8hWtSUlosvg1lra1xK9MDSRBygQambdRN1t3T2DMVvIHYAhm1kzt7"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      Sentry.init({
+        dsn: "https://12d19f0819024a0a915b324b670ac9c2@errors.dryan.tech/3",
+        tracesSampleRate: 0,
+      });
+    </script>
   </head>
   <body>
     <header>
